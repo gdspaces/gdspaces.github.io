@@ -1,0 +1,1301 @@
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" defhref="font-awesome.min.css" />
+<script>
+
+function myFunction2() {
+  const collection1 = document.getElementsByClassName("outer-discussion-container");
+  if (collection1[0].style.display === "none") {
+    collection1[0].style.display = "block";
+  } else {
+    collection1[0].style.display = "none";
+  }
+}
+
+
+
+function myFunction() {
+  const collection = document.getElementsByClassName("question-answer");
+  if (collection[0].style.display === "none") {
+    collection[0].style.display = "block";
+  } else {
+    collection[0].style.display = "none";
+  }
+}
+</script>
+
+
+<style>
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.outer-discussion-container {
+    display: none;
+}
+.question-body {
+    margin-left: 19px;
+}
+
+.question-answer {
+    display: none;
+    margin-top: 9px;
+    padding: 7px;
+    border: 1px solid rgb(80, 80, 80);
+    border: 1px solid rgba(80, 80, 80, .4);
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+</style>
+<div class="row">
+<div class="col-12">
+<div class="discussion-list-header">
+<h1><i class="fa fa-file-text-o mr-3"></i>Topic4-Question36</h1>
+	</div>
+</div>
+</div>
+<hr /><table style="border-collapse: collapse; width: 100%;" border="0"><tbody><tr><td style="width: 30%;"><p style="text-align: left; margin-left: 29px;"><a href="/az104/data/page_230.html">Prv</a></p></td> <td style="width: 40%;"></td><td style="width: 30%;"><p style="text-align: right; left;margin-right: 29px;"><a href="/az104/data/page_233.html">Next</a></p></td></tr></tbody></table><div class="question-body mt-3 pt-3 border-top" data-id="804438">
+<p class="card-text">
+							
+								You have an Azure Active Directory (Azure AD) tenant named adatum.com that contains the users shown in the following table.<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0027500001.png"/><br/>Adatum.com has the following configurations:<br/>✑ Users may join devices to Azure AD is set to User1.<br/>✑ Additional local administrators on Azure AD joined devices is set to None.<br/>You deploy Windows 10 to a computer named Computer1. User1 joins Computer1 to adatum.com.<br/>You need to identify the local Administrator group membership on Computer1.<br/>Which users are members of the local Administrators group?<br/>
+</p>
+<div class="voted-answers-tally d-none">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="804438" type="application/json">[{"voted_answers": "C", "vote_count": 19, "is_most_voted": true}]</script>
+</div>
+<div class="question-choices-container">
+<ul>
+<li class="multi-choice-item">
+<span class="multi-choice-letter" data-choice-letter="A">
+													A.
+												</span>
+											
+											User1 only
+										</li>
+<li class="multi-choice-item">
+<span class="multi-choice-letter" data-choice-letter="B">
+													B.
+												</span>
+											
+											User2 only
+										</li>
+<li class="multi-choice-item correct-hidden">
+<span class="multi-choice-letter" data-choice-letter="C">
+													C.
+												</span>
+											
+											User1 and User2 only
+										</li>
+<li class="multi-choice-item">
+<span class="multi-choice-letter" data-choice-letter="D">
+													D.
+												</span>
+											
+											User1, User2, and User3 only
+										</li>
+<li class="multi-choice-item">
+<span class="multi-choice-letter" data-choice-letter="E">
+													E.
+												</span>
+											
+											User1, User2, User3, and User4
+										</li>
+</ul>
+</div>
+<a class="btn btn-primary reveal-solution" href="#" onclick="myFunction()"> Suggested Answer</a>
+<a class="btn btn-primary hide-solution " href="#"  onclick="myFunction2()">Comment</a>
+<div class="card-text question-answer bg-light white-text">
+<span class="correct-answer-box"><strong>Suggested Answer:</strong>
+<span class="correct-answer">C</span>
+<a class="vote-answer-button ml-1 d-print-none" data-toggle="tooltip" href="#" title="Vote an answer">🗳️</a>
+<br/>
+</span>
+<span class="answer-description">
+								Users may join devices to Azure AD - This setting enables you to select the users who can register their devices as Azure AD joined devices. The default is All.<br/>Additional local administrators on Azure AD joined devices - You can select the users that are granted local administrator rights on a device. Users added here are added to the Device Administrators role in Azure AD. Global administrators, here User2, in Azure AD and device owners are granted local administrator rights by default.<br/>Reference:<br/>https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal
+							</span>
+</div>
+</div><div class="container outer-discussion-container">
+<div class="row">
+<div class="comments-container p-2 w-100">
+<!-- New comment start -->
+
+<!-- New comment end -->
+<div class="discussion-container">
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="235419" id="comment-235419">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/fedztedz/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				fedztedz
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Sat 05 Dec 2020 06:27">
+			2 years, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Answer is correct . User 1 and User 2 only. 
+First the only user who can join Azure AD devices is User 1 . since User1 is admin on machine. So, the machine can be added. 
+Second, the ones that can be local admins on Windows 10 are managed under "Additional local administrators" , since this is not mentioned, so we can assume default. 
+By default, the ones are global administrator and device owners (device administrators). This lead us to User1 and User2 only</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">188</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="451697" id="comment-451697">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/ik96/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				ik96
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 26 Sep 2021 09:04">
+			1 year, 9 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">correct answer</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">13</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="237574" id="comment-237574">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/kt_tk_2020/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				kt_tk_2020
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Mon 07 Dec 2020 19:35">
+			2 years, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">ans : D,
+https://docs.microsoft.com/en-us/azure/active-directory/devices/assign-local-admin
+When you connect a Windows device with Azure AD using an Azure AD join, Azure AD adds the following security principals to the local administrators group on the device:
+
+The Azure AD global administrator role
+The Azure AD device administrator role
+The user performing the Azure AD join</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">34</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="356730" id="comment-356730">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/akash2504/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				akash2504
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 14 May 2021 02:19">
+			2 years, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">When you connect a Windows device with Azure AD using an Azure AD join, Azure AD adds the following security principals to the local administrators group on the device:
+
+The Azure AD global administrator role
+The Azure AD device administrator role
+The user performing the Azure AD join
+
+ans is D</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="426410" id="comment-426410">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Rob89435/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Rob89435
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 17 Aug 2021 17:44">
+			1 year, 10 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">It's the 'Azure AD joined device local administrator role' not the 'Cloud Device Administrator'.
+So C is correct.
+
+When you connect a Windows device with Azure AD using an Azure AD join, Azure AD adds the following security principals to the local administrators group on the device:
+The Azure AD global administrator role
+The Azure AD joined device local administrator role
+The user performing the Azure AD join</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">18</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="373528" id="comment-373528">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Lkk51/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Lkk51
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 03 Jun 2021 13:57">
+			2 years ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Cloud Device Administrator
+
+Users in this role can enable, disable, and delete devices in Azure AD and read Windows 10 BitLocker keys (if present) in the Azure portal. The role does not grant permissions to manage any other properties on the device.
+
+answer is C</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">12</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="242411" id="comment-242411">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/lodo/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				lodo
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 13 Dec 2020 10:15">
+			2 years, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Ans C, cause the AZ AD device admin is added, not the AZ AD CLOUD device admin</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">9</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="255580" id="comment-255580">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Pukacz/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Pukacz
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 30 Dec 2020 13:10">
+			2 years, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Yes, here are the role descriptions https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference
+so the answer C is correct.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="927310" id="comment-927310">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/rishisoft1/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				rishisoft1
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Most Recent <i class="fa fa-clock-o"></i>
+</span>
+<span class="comment-date align-middle" title="Mon 19 Jun 2023 10:42">
+			1 week, 1 day ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">It should be user 1 &amp; User 2 only.  
+Azure AD Cloud Device Administrator role itself does not automatically grant local administrative privileges on Azure AD Joined devices. You need to use additional configuration steps, such as policies or group membership settings, to grant administrative access to users or groups on the local device.  So user can't be the part of local administrator group</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="899432" id="comment-899432">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/AZcheck/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				AZcheck
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 16 May 2023 19:30">
+			1 month, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">User 1 &amp; 2 only</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="813093" id="comment-813093">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/CommanderBigMac/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				CommanderBigMac
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 18 Feb 2023 15:29">
+			4 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">This question feels very badly worded</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="806191" id="comment-806191">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/UmbongoDrink/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				UmbongoDrink
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 12 Feb 2023 11:16">
+			4 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">User1 and User2 only</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="714436" id="comment-714436">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/LiamAzure/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				LiamAzure
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 09 Nov 2022 10:46">
+			7 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">Global Admin, Azure AD joined device local administrator role, User joining the device. The additional local administrators box is for any addition local admins you want to manually add, but default is set to none</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="669697" id="comment-669697">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/NaoVaz/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				NaoVaz
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 15 Sep 2022 10:49">
+			9 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">C) " User1 and User2 only "
+
+User1 because he joined the Device to the tenant so he must be Admin on the device.
+By default, Local administrators on joined devices, are the device owners and Global Administrators, so User2 is also. 
+
+Reference: https://docs.microsoft.com/en-us/azure/active-directory/devices/assign-local-admin#how-it-works</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="656909" id="comment-656909">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/EmnCours/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				EmnCours
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 02 Sep 2022 05:14">
+			9 months, 4 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">Correct Answer: C 🗳️
+Users may join devices to Azure AD - This setting enables you to select the users who can register their devices as Azure AD joined devices. The default is All.
+Additional local administrators on Azure AD joined devices - You can select the users that are granted local administrator rights on a device. Users added here are added to the Device Administrators role in Azure AD. Global administrators, here User2, in Azure AD and device owners are granted local administrator rights by default.
+Reference:
+https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="618485" id="comment-618485">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Lazylinux/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Lazylinux
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 19 Jun 2022 04:00">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">C is correct
+When you connect a Windows device with Azure AD using an Azure AD join, Azure AD adds the following security principals to the local administrators group on the device: 
+*The Azure AD global administrator role 
+*The Azure AD device administrator role 
+*The user performing the Azure AD join 
+*Users may join devices to Azure AD - This setting enables you to select the users who can register their devices as Azure AD joined devices. The default is All. 
+*Azure AD Join enables users to join their devices to Active Directory from anywhere as long as they have connectivity with the Internet 
+*The Users may join devices to Azure AD setting enables you to select the users who can join devices to Azure AD. Options are All, Selected and None. The default is All 
+
+**remember AZ AD device admin is NOT same as Cloud device admin, MS misleading here*</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">9</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="613904" id="comment-613904">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/manalshowaei/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				manalshowaei
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 09 Jun 2022 12:52">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">C. User1 and User2 only</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="593323" id="comment-593323">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/scottims/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				scottims
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 27 Apr 2022 19:36">
+			1 year, 2 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Ans. C
+Tested this in lab
+Azure Joined device with User1. Was presented with a box stating domain joining and User1 would be Administrator of device.
+
+Added User2 to Cloud Device Administrator Role. Signed into the device and tried to run cmd as administrator. Result...UAC screen requesting administrative credentials. Entered User1 credentials and administrative cmd opened.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="570682" id="comment-570682">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/josevirtual/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				josevirtual
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 18 Mar 2022 18:48">
+			1 year, 3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-selected-answers badge badge-warning">Selected Answer: <span><strong>C</strong></span></div>
+<div class="comment-content">C is correct</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="563692" id="comment-563692">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/InvisibleShadow/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				InvisibleShadow
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 09 Mar 2022 04:00">
+			1 year, 3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">This question came in the exam today 8/Mar/2022.
+I passed the exam, 95% questions came from here.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="611807" id="comment-611807">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/vineetkchauhan/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				vineetkchauhan
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 05 Jun 2022 14:05">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">you only put this comment to every question.. Are you a bot or trying to just creditibity of this source.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="561211" id="comment-561211">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/sid132/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				sid132
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 05 Mar 2022 06:05">
+			1 year, 3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">On the exam today, 4.March.2022</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="538023" id="comment-538023">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/nidhogg/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				nidhogg
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 01 Feb 2022 17:18">
+			1 year, 4 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">On the exam today, 1.feb.2022
+Just 761/1000, but OK! :D
+Thanks to ExamTopics and to you all!</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">7</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="521950" id="comment-521950">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/HenriKI2/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				HenriKI2
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 12 Jan 2022 08:14">
+			1 year, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference
+For BuiltinRoles</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<div class="load-more-section d-print-none mb-1" data-after-comment="521950" data-discussion-id="38369">
+<a class="load-full-discussion-button ml-3" href="javascript:void(0)">Load full discussion...</a>
+</div>
+</div>
+</div>
+</div>
+</div>

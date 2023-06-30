@@ -1,0 +1,702 @@
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" defhref="font-awesome.min.css" />
+<script>
+
+function myFunction2() {
+  const collection1 = document.getElementsByClassName("outer-discussion-container");
+  if (collection1[0].style.display === "none") {
+    collection1[0].style.display = "block";
+  } else {
+    collection1[0].style.display = "none";
+  }
+}
+
+
+
+function myFunction() {
+  const collection = document.getElementsByClassName("question-answer");
+  if (collection[0].style.display === "none") {
+    collection[0].style.display = "block";
+  } else {
+    collection[0].style.display = "none";
+  }
+}
+</script>
+
+
+<style>
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.outer-discussion-container {
+    display: none;
+}
+.question-body {
+    margin-left: 19px;
+}
+
+.question-answer {
+    display: none;
+    margin-top: 9px;
+    padding: 7px;
+    border: 1px solid rgb(80, 80, 80);
+    border: 1px solid rgba(80, 80, 80, .4);
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+</style>
+<div class="row">
+<div class="col-12">
+<div class="discussion-list-header">
+<h1><i class="fa fa-file-text-o mr-3"></i>Topic4-Question68</h1>
+	</div>
+</div>
+</div>
+<hr /><table style="border-collapse: collapse; width: 100%;" border="0"><tbody><tr><td style="width: 30%;"><p style="text-align: left; margin-left: 29px;"><a href="/az104/data/page_262.html">Prv</a></p></td> <td style="width: 40%;"><p style="text-align: center; left;margin-right: 29px;"><a href="https://cloudtech.how/microsoft/exam-az-104-microsoft-azure-administrator/az-104-question-170" rel="noopener noreferrer" target="_blank">Referance Page</a></p></td><td style="width: 30%;"><p style="text-align: right; left;margin-right: 29px;"><a href="/az104/data/page_264.html">Next</a></p></td></tr></tbody></table><div class="question-body mt-3 pt-3 border-top" data-id="804470">
+<p class="card-text">
+							
+								HOTSPOT -<br/>You have an Azure subscription that contains the resources shown in the following table.<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0032200001.png"/><br/>In Azure Cloud Shell, you need to create a virtual machine by using an Azure Resource Manager (ARM) template.<br/>How should you complete the command? To answer, select the appropriate options in the answer area.<br/>NOTE: Each correct selection is worth one point.<br/>Hot Area:<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0032300001.png"/><br/>
+</p>
+<a class="btn btn-primary reveal-solution" href="#" onclick="myFunction()"> Suggested Answer</a>
+<a class="btn btn-primary hide-solution " href="#"  onclick="myFunction2()">Comment</a>
+<div class="card-text question-answer bg-light white-text">
+<span class="correct-answer-box"><strong>Suggested Answer:</strong>
+<span class="correct-answer"><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0032300002.jpg"/></span>
+<br/>
+</span>
+<span class="answer-description">
+								Reference:<br/>https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-6.6.0
+							</span>
+</div>
+</div><div class="container outer-discussion-container">
+<div class="row">
+<div class="comments-container p-2 w-100">
+<!-- New comment start -->
+
+<!-- New comment end -->
+<div class="discussion-container">
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="511553" id="comment-511553">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/ninjia/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				ninjia
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Tue 28 Dec 2021 21:24">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1: New-AzResourceGroupDeployment. This cmdlet allows you to use a custom ARM template file to deploy resources to a resource group. For example:
+
+New-AzResourceGroup -Name $resourceGroupName -Location "$location"
+New-AzResourceGroupDeployment `
+    -ResourceGroupName $resourceGroupName `
+    -TemplateUri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-windows/azuredeploy.json" `
+    -adminUsername $adminUsername `
+    -adminPassword $adminPassword `
+    -dnsLabelPrefix $dnsLabelPrefix
+
+Box 2: -ResourceGroupName RG1. It’s one of parameters of New-AzResourceGroupDeployment to specify to which resource group you want to deploy resources. 
+
+You could use New-AzVm to create a VM, but it doesn’t use a template. You would need to provide all parameters in the command line. 
+
+Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-template
+https://docs.microsoft.com/en-us/powershell/module/az.compute/new-azvm?view=azps-7.0.0</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">52</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="561209" id="comment-561209">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/sid132/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				sid132
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Sat 05 Mar 2022 06:02">
+			1 year, 3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">On the exam today, 4.March.2022</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">14</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="799808" id="comment-799808">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/zellck/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				zellck
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Most Recent <i class="fa fa-clock-o"></i>
+</span>
+<span class="comment-date align-middle" title="Mon 06 Feb 2023 14:58">
+			4 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">1. New-AzResourceGroupDeployment
+2. -ResourceGroupName RG1
+
+https://learn.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroupdeployment</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="541185" id="comment-541185">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/husam421/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				husam421
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 05 Feb 2022 18:16">
+			1 year, 4 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">New-AzResourceGroupDeployment -ResourceGroupName myResourceGroup -TemplateFile 
+
+New-AzResourceGroupDeployment `
+-Name ExampleDeployment `
+-ResourceGroupName RG1 `
+-TemplateFile
+
+Answer is correct</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="508740" id="comment-508740">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/MaximKotov/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				MaximKotov
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 24 Dec 2021 19:59">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">The answer is correct! Don't take the command name literally. It's using for custom template deployment. We specify the name of an existing group and the path to the template.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="506453" id="comment-506453">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/S3ktar/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				S3ktar
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 21 Dec 2021 22:28">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">The resource group is already created as per the question. It is asking for the command to deploy a vm, thus the answer is "New-AZvm".....second part "-ResourceGroupName RG1"</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="514185" id="comment-514185">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/MrBlueSky/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				MrBlueSky
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 31 Dec 2021 19:27">
+			1 year, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">No. The fact that this is a VM is already specified in the ARM template. We only need to give it a command to deploy into a resource group, and then specify which resource group.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="510398" id="comment-510398">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/adrian_borowski/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				adrian_borowski
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 27 Dec 2021 15:53">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Lab thing guys before posting! You are wrong. New-AzVm does NOT accept argument TemplateUri</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">6</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="501841" id="comment-501841">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Yaydel/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Yaydel
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 15 Dec 2021 04:48">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Answer is correct.
+
+https://docs.microsoft.com/ko-kr/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-0.10.0</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="500137" id="comment-500137">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/hanahjane13/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				hanahjane13
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 12 Dec 2021 18:40">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">New-AzVm `
+    -ResourceGroupName "myResourceGroup" `
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="510397" id="comment-510397">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/adrian_borowski/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				adrian_borowski
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 27 Dec 2021 15:53">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">You are wrong. New-AzVm does NOT accept argument TemplateUri</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="498538" id="comment-498538">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/olsenOnS/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				olsenOnS
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 10 Dec 2021 12:00">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">I think the answer is correct.
+
+$resourceGroupName = Read-Host -Prompt "Enter the Resource Group name"
+$location = Read-Host -Prompt "Enter the location (i.e. centralus)"
+$adminUsername = Read-Host -Prompt "Enter the administrator username"
+$adminPassword = Read-Host -Prompt "Enter the administrator password" -AsSecureString
+$dnsLabelPrefix = Read-Host -Prompt "Enter an unique DNS name for the public IP"
+
+New-AzResourceGroup -Name $resourceGroupName -Location "$location"
+______________________________________________
+New-AzResourceGroupDeployment `
+    -ResourceGroupName $resourceGroupName `
+    -TemplateUri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-windows/azuredeploy.json" `
+    -adminUsername $adminUsername `
+    -adminPassword $adminPassword `
+    -dnsLabelPrefix $dnsLabelPrefix
+-------------------------------------------------------------------------------
+
+ (Get-AzVm -ResourceGroupName $resourceGroupName).name</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">7</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

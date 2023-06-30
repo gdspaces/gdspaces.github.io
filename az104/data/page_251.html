@@ -1,0 +1,1470 @@
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" defhref="font-awesome.min.css" />
+<script>
+
+function myFunction2() {
+  const collection1 = document.getElementsByClassName("outer-discussion-container");
+  if (collection1[0].style.display === "none") {
+    collection1[0].style.display = "block";
+  } else {
+    collection1[0].style.display = "none";
+  }
+}
+
+
+
+function myFunction() {
+  const collection = document.getElementsByClassName("question-answer");
+  if (collection[0].style.display === "none") {
+    collection[0].style.display = "block";
+  } else {
+    collection[0].style.display = "none";
+  }
+}
+</script>
+
+
+<style>
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.outer-discussion-container {
+    display: none;
+}
+.question-body {
+    margin-left: 19px;
+}
+
+.question-answer {
+    display: none;
+    margin-top: 9px;
+    padding: 7px;
+    border: 1px solid rgb(80, 80, 80);
+    border: 1px solid rgba(80, 80, 80, .4);
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+</style>
+<div class="row">
+<div class="col-12">
+<div class="discussion-list-header">
+<h1><i class="fa fa-file-text-o mr-3"></i>Topic4-Question54</h1>
+	</div>
+</div>
+</div>
+<hr /><table style="border-collapse: collapse; width: 100%;" border="0"><tbody><tr><td style="width: 30%;"><p style="text-align: left; margin-left: 29px;"><a href="/az104/data/page_248.html">Prv</a></p></td> <td style="width: 40%;"><p style="text-align: center; left;margin-right: 29px;"><a href="https://cloudtech.how/microsoft/exam-az-104-microsoft-azure-administrator/az-104-question-158" rel="noopener noreferrer" target="_blank">Referance Page</a></p></td><td style="width: 30%;"><p style="text-align: right; left;margin-right: 29px;"><a href="/az104/data/page_250.html">Next</a></p></td></tr></tbody></table><div class="question-body mt-3 pt-3 border-top" data-id="804456">
+<p class="card-text">
+							
+								HOTSPOT -<br/>You have the App Service plan shown in the following exhibit.<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0029800001.jpg"/><br/>The scale-in settings for the App Service plan are configured as shown in the following exhibit.<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0029900001.jpg"/><br/>The scale out rule is configured with the same duration and cool down tile as the scale in rule.<br/>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<br/>NOTE: Each correct selection is worth one point.<br/>Hot Area:<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0030000001.png"/><br/>
+</p>
+<a class="btn btn-primary reveal-solution" href="#" onclick="myFunction()"> Suggested Answer</a>
+<a class="btn btn-primary hide-solution " href="#"  onclick="myFunction2()">Comment</a>
+<div class="card-text question-answer bg-light white-text">
+<span class="correct-answer-box"><strong>Suggested Answer:</strong>
+<span class="correct-answer"><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0030000002.png"/></span>
+<br/>
+</span>
+<span class="answer-description">
+								Box 1: 5 -<br/>The maximum 5 will kept as the CPU Usage &gt;= 30.<br/><br/>Box 2: 3 -<br/>As soon as the average CPU usage drops below 30%, the count will decrease by 1. After the 5 minute cool-down it will decrease by another 1, reaching 3.<br/>Reference:<br/>https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-autoscale-performance-schedule
+							</span>
+</div>
+</div><div class="container outer-discussion-container">
+<div class="row">
+<div class="comments-container p-2 w-100">
+<!-- New comment start -->
+
+<!-- New comment end -->
+<div class="discussion-container">
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="360316" id="comment-360316">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/mlantonis/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				mlantonis
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Tue 18 May 2021 11:25">
+			2 years, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Correct Answer:
+
+Box 1: 2
+70% for 1h, and then 90% for 5 minutes. So, from the default of 1 it will scale out out 1 more. So, 2 in total.
+
+Box 2: 4
+90% for 1h and then 25% for 9minutes. So, from the default of 1 it will it scale in to the max 5 (60/5 = 12, which means 6 times scale out, because we have 5 minutes period of cool down). Then when it drops to 25% for 9 minutes and it will scale in once after 5 mins (since the average of the last 5 minutes is under 30% ), so it will decrease by 1, so 4 in total. Then it will have a cooldown of 5 minutes before scaling in again, but since only 4 minutes left from 9 minutes (9-5 = 4), it won't scale in again. So, 4 in total.
+
+
+Reference:
+https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-autoscale-performance-schedule
+https://docs.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-understanding-settings</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">361</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="493025" id="comment-493025">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Takloy/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Takloy
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 03 Dec 2021 09:49">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">I respect your answer mlantonis, but you explaination on box 2 confused me. 
+Can't we just say that while it was on 90% we all know that it stays at 5 instances. When the threshold dropped down to 25% for 9 minutes, the count decreased by 1 only since it didn't reach 10 minutes. 
+Nonetheless, Mlantonis is correct and explanation is also correct.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">18</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="522157" id="comment-522157">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Juli98/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Juli98
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 12 Jan 2022 13:50">
+			1 year, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">it starts at 1. Scale out if CPU &gt; 85% over 5 min and pause during 5 min (Cool Down). 
+Assuming instant scaling...and CPU still at 90% at all time (very simplified view).
+If CPU is at 90% for one hour we have
+0 min : 1 (default)
+5 min : 2 
+5-10 min : Still 2 (Cooldown time)
+10 min : 3 (average last 5 is still CPU&gt;90%)
+10 min-15 min : Still 3
+15 min : 4
+and so on until we reach 5 (maximum capacity).
+
+The calculation provided by Fed seems not correct as it is assumed that after the cool down time, the system wait another 5 min to collect metrics which seems not the case.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">8</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="607503" id="comment-607503">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Exilic/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Exilic
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 26 May 2022 08:56">
+			1 year, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Also came to the conclusion 2, 4 perhaps my math is wrong</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="687105" id="comment-687105">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/klasbeatz/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				klasbeatz
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 05 Oct 2022 19:50">
+			8 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">There was no time frame specified in the question for the scale increase it only shows the threshold % at which it increases. These questions don't give details. Do we just assume it follows the same time as the decreasing rule?</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="735409" id="comment-735409">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Chickpea2016/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Chickpea2016
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 04 Dec 2022 20:56">
+			6 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">"The scale out rule is configured with the same duration and cool down tile as the scale in rule."</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="691509" id="comment-691509">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/klexams/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				klexams
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 10 Oct 2022 23:07">
+			8 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Correct!! Just to add: the last 4 mins is for the cooldown anyway so won't count regardless.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="648891" id="comment-648891">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Holydud/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Holydud
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 19 Aug 2022 12:39">
+			10 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Was on exam 19 Aug 2022. Scored 870. Around 85% questions were also on ET. Answered:
+
+Box1: 2
+Box2: 4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">13</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<div class="load-more-section d-print-none mb-1" data-after-comment="648891" data-discussion-id="51233">
+<a class="load-full-discussion-button ml-3" href="javascript:void(0)">Load full discussion...</a>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="346462" id="comment-346462">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Moyuihftg/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Moyuihftg
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Fri 30 Apr 2021 23:12">
+			2 years, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">I think:
+2
+4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">123</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="863812" id="comment-863812">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/NJTH/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				NJTH
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Most Recent <i class="fa fa-clock-o"></i>
+</span>
+<span class="comment-date align-middle" title="Fri 07 Apr 2023 14:03">
+			2 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Simular question was on todays exam. 
+(7th April 2023)</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="933334" id="comment-933334">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Sahilbhai/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Sahilbhai
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 25 Jun 2023 09:22">
+			3 days, 1 hour ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">please provide the answers also it will help others to .</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="851140" id="comment-851140">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Rams_84zO6n/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Rams_84zO6n
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 26 Mar 2023 16:23">
+			3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">mlantonis is right, i'm changing my answer to 2 and 4. I missed to notice "The scale out rule is configured with the same duration and cool down tile as the scale in rule." Another observation i made is Max statistic works differently than Avg for the duration. 
+Box1: 2 - When CPU reaches 90%, Max doesn't need to wait for duration 5 min. to evaluate, so instance count goes to 2 right away. But cooldown=5 min, so instance count stays at 2 after CPU holds at 90% for 5 minutes.
+Box 2: 4 - When CPU goes below 25%, after 5 minutes count=4. Cool down 5 min, so instance count after CPU stays below 25% for 9 minutes is 4.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="848432" id="comment-848432">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Rams_84zO6n/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Rams_84zO6n
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 23 Mar 2023 17:20">
+			3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1: 2, Box 2: 3
+Right after the 60th min, average CPU usage is below 25%. So at 60.01 min, CPU count is 4. Allowing 5 min cool down period, next check is at 65.1 min. CPU count will decrease by 1 again. So when you check CPU count at 69th minute, it would be 3</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="806271" id="comment-806271">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/zellck/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				zellck
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 12 Feb 2023 12:40">
+			4 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">1. 2  (min 1 + 1 scale out)
+2. 4 (max 5 - 1 scale in)</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="716683" id="comment-716683">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/JackieTYF/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				JackieTYF
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 12 Nov 2022 13:41">
+			7 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 2 = 4
+ When it drops to 25% for 9 minutes and it will scale in once after 5 mins (since the average of the last 5 minutes is under 30% ), so it will decrease by 1, so 4 in total. Then it will have a cooldown of 5 minutes before scaling in again, but since only 4 minutes left from 9 minutes (9-5 = 4), it won't scale in again. So, 4 in total.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="715858" id="comment-715858">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/BYNeo/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				BYNeo
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 11 Nov 2022 09:09">
+			7 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Base on the answer, Agree with answer 5 and 3. 
+Reason:
+Box 1: CPU Usage &gt;= 30 will increase 1 and scale out mention (Max) 85 increase 1
+Base on question 70% will for 1 hour will reach 5 already (every 5 mins increase 1).
+
+Box2: 90% for 1 hour will be 5
+the moment it drop 25% it will reduce from 5 to 4
+Then base on ever 5 mins will from 1, in 9 mins will be drop from 4 to 3</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="719943" id="comment-719943">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/OrwellMB/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				OrwellMB
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 16 Nov 2022 20:12">
+			7 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Hey,
+Box2:
+for scale-in, (Average) Cpu% &lt;30 for 5 minutes. So it needs 5 minutes constantly under 30% for the scale-in to take effect, not the moment it drops!
+Answer is 4 (from 5-&gt;4 at the 5th minute mark, then it will be 3 at the 10th minute, but after 9mins, it is 4)</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="685009" id="comment-685009">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/bdumois/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				bdumois
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 02 Oct 2022 20:27">
+			8 months, 4 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1:  5
+If the scale out rule Tile is configured the same as the scale in tile, the CPU is set to 305 (regardless of the rule name [...(Maximum) CpuPercentage &gt; 85], one could presume the value is set to 30, because the instruction say "The scale out rule is configured with the same duration and cool down tile as the scale in rule" .
+With this setting scaling out starts right away with 70% CPU utilization and reaches 5.
+
+Box 2-4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="648730" id="comment-648730">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/EmnCours/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				EmnCours
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 19 Aug 2022 06:54">
+			10 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">I think:
+2
+4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="639255" id="comment-639255">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Isacco/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Isacco
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 29 Jul 2022 16:12">
+			11 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">incorrect answer, 1--&gt; 2 and 2--&gt; 4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="618901" id="comment-618901">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Lazylinux/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Lazylinux
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 20 Jun 2022 02:24">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">for sure 2 and 4
+Box 1: is 2 start with 1 and adds 1 because threshold of 85% exceed ones
+Box2: 4 because threshold 85% been exceed for 1hr hence total vms is max vms that is 5 then goes down below since threshold of 30% for only 9 minutes hence only scale in by 1 vm and hence total left is 4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">6</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="613926" id="comment-613926">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/manalshowaei/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				manalshowaei
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 09 Jun 2022 13:00">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1: 5 -
+The maximum 5 will kept as the CPU Usage &gt;= 30.
+
+Box 2: 3 -
+In 9 minutes the count will be decreased twice from 5 reaching 3.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="616869" id="comment-616869">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/waqarahmed78/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				waqarahmed78
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 15 Jun 2022 19:03">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">For Box 2: it would be 4 as utilization at 25% was for 9 minutes.
+Hence, after 1 hour of 90 % utilization of maximum, 5 -&gt; will reduce to 4 after 5 minutes of utilization at 25%.
+In the next 4 minutes, it will not scale in as cool down time is 5 minutes.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="608360" id="comment-608360">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Chrys941/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Chrys941
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 28 May 2022 12:37">
+			1 year, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">******The scale out rule is configured with the same duration and cool down tile as the scale in rule 5Min
+70 %for 1 hour that mean
+60 min - 1 
+65 min +1 = 2 total 2 
+
+box 2  
+90 % 60 min - 5  - which is the maximum 
+25 % 61 min - 5 
+25 % 62 min - 5 
+25 % 63 min - 5
+25 % 64 min - 5
+25 % 65 min - 5
+25 % 66 min - 4
+25 % 67 min - 4
+25 % 68 min - 4
+25 % 69 min - 4
+25 % 66 min - 4</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="848436" id="comment-848436">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Rams_84zO6n/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Rams_84zO6n
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 23 Mar 2023 17:24">
+			3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">25% 61 min - why the count stays at 5? shouldn't it be 4? cooldown: The amount of time to wait after a scale operation before scaling again</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="590352" id="comment-590352">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Olram/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Olram
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 23 Apr 2022 04:23">
+			1 year, 2 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Passed today. this is part of the exam. 4/23/22</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="573474" id="comment-573474">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Ahmed_Root/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Ahmed_Root
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 23 Mar 2022 09:36">
+			1 year, 3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">actually it will scale out at the end of the first 5 minutes. So:
+as a diagram
+minutes-instance
+0-1
+5-2
+10-2
+15-3
+20-3
+25-4
+30-4
+35-5
+40-5
+45-5
+50-5
+and so on</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="573396" id="comment-573396">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Dhanya2022/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Dhanya2022
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 23 Mar 2022 06:14">
+			1 year, 3 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">5 (no cooldown period),3( initially when &lt;30, decreases 1 and after 5 min)</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<div class="load-more-section d-print-none mb-1" data-after-comment="573396" data-discussion-id="51233">
+<a class="load-full-discussion-button ml-3" href="javascript:void(0)">Load full discussion...</a>
+</div>
+</div>
+</div>
+</div>
+</div>
