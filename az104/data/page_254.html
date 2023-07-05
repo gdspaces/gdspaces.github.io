@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="default.css" />
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" defhref="font-awesome.min.css" />
 <script>
@@ -77,4 +78,1226 @@ function myFunction() {
 	</div>
 </div>
 </div>
-<hr /><table style="border-collapse: collapse; width: 100%;" border="0"><tbody><tr><td style="width: 30%;"><p style="text-align: left; margin-left: 29px;"><a href="/az104/data/page_251.html">Prv</a></p></td> <td style="width: 40%;"><p style="text-align: center; left;margin-right: 29px;"><a href="https://cloudtech.how/microsoft/exam-az-104-microsoft-azure-administrator/az-104-question-161" rel="noopener noreferrer" target="_blank">Referance Page</a></p></td><td style="width: 30%;"><p style="text-align: right; left;margin-right: 29px;"><a href="/az104/data/page_253.html">Next</a></p></td></tr></tbody></table>NoneNone
+<hr /><table style="border-collapse: collapse; width: 100%;" border="0"><tbody><tr><td style="width: 30%;"><p style="text-align: left; margin-left: 29px;"><a href="page_253.html">Prv</a></p></td> <td style="width: 40%;"><p style="text-align: center; left;margin-right: 29px;"><a href="https://cloudtech.how/microsoft/exam-az-104-microsoft-azure-administrator/az-104-question-163" rel="noopener noreferrer" target="_blank">Referance Page</a></p></td><td style="width: 30%;"><p style="text-align: right; left;margin-right: 29px;"><a href="page_255.html">Next</a></p></td></tr></tbody></table><div class="question-body mt-3 pt-3 border-top" data-id="804459">
+<p class="card-text">
+							
+								HOTSPOT -<br/>You have an Azure subscription that contains a virtual machine scale set. The scale set contains four instances that have the following configurations:<br/>✑ Operating system: Windows Server 2016<br/>✑ Size: Standard_D1_v2<br/>You run the get-azvmss cmdlet as shown in the following exhibit:<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0030500001.jpg"/><br/>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<br/>NOTE: Each correct selection is worth one point.<br/>Hot Area:<br/><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0030500002.jpg"/><br/>
+</p>
+<a class="btn btn-primary reveal-solution" href="#" onclick="myFunction()"> Suggested Answer</a>
+<a class="btn btn-primary hide-solution " href="#"  onclick="myFunction2()">Comment</a>
+<div class="card-text question-answer bg-light white-text">
+<span class="correct-answer-box"><strong>Suggested Answer:</strong>
+<span class="correct-answer"><img class="in-exam-image" src="https://www.examtopics.com/assets/media/exam-media/04223/0030600001.jpg"/></span>
+<br/>
+</span>
+<span class="answer-description">
+								The Get-AzVmssVM cmdlet gets the model view and instance view of a Virtual Machine Scale Set (VMSS) virtual machine.<br/><br/>Box 1: 0 -<br/>The enableAutomaticUpdates parameter is set to false. To update existing VMs, you must do a manual upgrade of each existing VM.<br/><br/>Box 2: 4 -<br/>Enabling automatic OS image upgrades on your scale set helps ease update management by safely and automatically upgrading the OS disk for all instances in the scale set.<br/>Reference:<br/>https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade
+							</span>
+</div>
+</div><div class="container outer-discussion-container">
+<div class="row">
+<div class="comments-container p-2 w-100">
+<!-- New comment start -->
+
+<!-- New comment end -->
+<div class="discussion-container">
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="360337" id="comment-360337">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/mlantonis/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				mlantonis
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Tue 18 May 2021 12:10">
+			2 years, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Correct Answer:
+
+Box 1: 4
+If you resize the Scale Set all the VMs get resized at once, thus 4 is the correct answer.
+
+Box 2: 1
+Automatic OS updates update 20% of the VMs at once, with a minimum of 1 VM instance at a time. Also 20% of 4 = 0.8.
+
+Reference:
+https://docs.microsoft.com/en-us/learn/modules/build-app-with-scale-sets/2-features-benefits-virtual-machine-scale-sets
+https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade
+https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">179</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="483625" id="comment-483625">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/yoelalan14/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				yoelalan14
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sun 21 Nov 2021 20:58">
+			1 year, 7 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">For Box 2, what about the Automatic Updated feature that is turned "off"? Wouldn't the answer be 0?</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">8</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="488184" id="comment-488184">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/e_karma/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				e_karma
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 27 Nov 2021 15:10">
+			1 year, 7 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">That is patches where as this is os upgrades</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">7</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="247838" id="comment-247838">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/solarwinds123/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				solarwinds123
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Highly Voted <i class="fa fa-thumbs-up"></i>
+</span>
+<span class="comment-date align-middle" title="Sat 19 Dec 2020 09:31">
+			2 years, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">The question asks "if the administrator changes the size", not if it gets scaled up vertically. I tested this, and if you resize the scale set all the virtual machines get resized at once, thus 4 is the correct answer. For the second part, automatic OS updates update 20% of the VMs at once, with a minimum of 1 VM instance at a time.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">97</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="299825" id="comment-299825">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/ciscogeek/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				ciscogeek
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 26 Feb 2021 16:46">
+			2 years, 4 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Most trustworthy, and correct as per other explanations and references as well.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">10</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="331548" id="comment-331548">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/oshoparsi/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				oshoparsi
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 08 Apr 2021 22:38">
+			2 years, 2 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">20% 4 = 0.8  but minimum would be 1 vm.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="840883" id="comment-840883">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/lulzsec2019/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				lulzsec2019
+			</h5>
+</a>
+<span class="badge badge-primary">
+				Most Recent <i class="fa fa-clock-o"></i>
+</span>
+<span class="comment-date align-middle" title="Thu 16 Mar 2023 12:25">
+			3 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Guys, sorry for the noob question. where did you get the value "4"? I don't see any number 4 in the picture.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="852142" id="comment-852142">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/redbull2023/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				redbull2023
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 27 Mar 2023 15:20">
+			3 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">read the question again bro</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="836517" id="comment-836517">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/yellowdot/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				yellowdot
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 11 Mar 2023 22:08">
+			3 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box1 - 4 
+This refers to the second PS cmdlt 'UpgradePolicy' which "determines what happens next after you change the scale set model" (ex. VM size, OS ver, extensionPolicy). Box1 asks what happens when size of VM changes. Since it's set to 'automatic', the change will be applied to all the VMs in the scale set at once 
+
+[ref: https://msftstack.wordpress.com/2016/11/15/azure-scale-set-upgrade-policy-explained/]
+
+Box2 - 0 
+This refers to the first PS cmdlt 'UpgradePolicy' which "determines what happens when image publishers publishes the latest image OS image - which in this case Microsoft released the Win Server 2016 image. Since it's set to 'false', there will be no changes made- u[dates will need to happen manually with user intervention. 
+
+[ref: https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-service-fabric-enableautomaticupdates/ba-p/834246]</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="811746" id="comment-811746">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Standa_82/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Standa_82
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 17 Feb 2023 11:28">
+			4 months, 2 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">It seems to me that picture doesn't match questions.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="703916" id="comment-703916">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/dc2k79/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				dc2k79
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 25 Oct 2022 15:44">
+			8 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1: 4
+The first command has nothing to do with VM Resizing.
+
+Box 2: 1
+What's set to 'false' is Patch updates. This is recommended to be set to 'False' when Automatic OS upgrades are set to 'True'. What this means is that the automatic rolling OS Upgrades will happen at 20%.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">7</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="666496" id="comment-666496">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Bobby1977/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Bobby1977
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 12 Sep 2022 01:04">
+			9 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">WindowsConfiguration.EnableAutomaticUpdates PropertyGets or sets indicates whether Automatic Updates is enabled for the Windows virtual machine. Default value is true. For virtual machine scale sets, this property can be updated and updates will take effect on OS reprovisioning.
+
+Based on the above note, as EnableAutomaticUpdates = False the OS updates will not happen. So answers are Box1: 4 and Box 2: 0</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="637247" id="comment-637247">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/tt2tt/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				tt2tt
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 26 Jul 2022 08:53">
+			11 months, 1 week ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">There're seven more confusing comments here, I am totally lost... as usual, I will follow the answer from mlantonis</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">10</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="660717" id="comment-660717">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Davin0406/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Davin0406
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 06 Sep 2022 04:30">
+			10 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Me too bro</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">6</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="631628" id="comment-631628">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/NotMeAnyWay/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				NotMeAnyWay
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 15 Jul 2022 08:40">
+			11 months, 3 weeks ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Part one: Answer 0
+The Administrator is doing a manual change to the virtual machine scale set MODEL (AKA OS Build), however this model change does not take immediate affect for the exsiting machines in the Scale Set, see this section of the doc:
+Read Here:
+(https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set#how-to-update-global-scale-set-properties)
+
+Part 2: Answer 4
+The Upgrade policy (Don't get confused with "Update" Policy, which is for OS Patches) is set to Automatic. When the Upgrade policy is set to automatic, all the VMs may be taken down and upgraded at the same time, as per the MS docs:
+Read Here:
+(https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set#how-to-bring-vms-up-to-date-with-the-latest-scale-set-model)
+
+NB: The 20% policy for upgrades mentioned in other comments is for Extensions in a VMSS, not the actual VM scale set.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="613929" id="comment-613929">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/manalshowaei/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				manalshowaei
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Thu 09 Jun 2022 13:01">
+			1 year ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1: 0 -
+The enableAutomaticUpdates parameter is set to false. To update existing VMs, you must do a manual upgrade of each existing VM.
+
+Box 2: 4 -
+Enabling automatic OS image upgrades on your scale set helps ease update management by safely and automatically upgrading the OS disk for all instances in the scale set.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="604998" id="comment-604998">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Scoobysnaks86/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Scoobysnaks86
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 21 May 2022 21:11">
+			1 year, 1 month ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">I'm tired of these questions being more of tests of English comprehension than actually doing the job. Trick questions with diagrams that are unimportant or intentionally misleading does not do anything to test knowledge.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">25</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="529879" id="comment-529879">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/EleChie/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				EleChie
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 22 Jan 2022 14:35">
+			1 year, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Explanation
+the Get-AzVmssVM cmdlet gets the model view and instance view of a Virtual Machine Scale Set (VMSS) virtual machine.
+Box 1: 0
+The enableAutomaticUpdates parameter is set to false. To update existing VMs, you must do a manual upgrade of each existing VM.
+Box 2: 1
+Below is clearly mentioned in the official Website
+"The upgrade orchestrator identifies the batch of VM instances to upgrade, with any one batch having a maximum of 20% of the total instance count, subject to a minimum batch size of one virtual machine." So, 20% from 4 ~1</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">5</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="531121" id="comment-531121">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/c64basic/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				c64basic
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Mon 24 Jan 2022 08:45">
+			1 year, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">So basically, what we are looking at here is the UpgradePolicy only, as neither of the two actions (resizing the VM and upGRADING the OS) conern Windows settings. The top command (WindowsConfiguration) doesn't have anything to do with the questions.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">1</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="543354" id="comment-543354">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Mozbius_/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Mozbius_
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 08 Feb 2022 22:39">
+			1 year, 4 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Box 1: 
+In case we want to disable the windows updates, we need to set “enableAutomaticUpdates” as false
+
+https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-service-fabric-enableautomaticupdates/ba-p/834246
+
+This is not a windows update but a VM size change.</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="522191" id="comment-522191">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Juli98/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Juli98
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 12 Jan 2022 14:27">
+			1 year, 5 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">For Q2
+https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade
+For scale sets using Windows virtual machines, starting with Compute API version 2019-03-01, the property virtualMachineProfile.osProfile.windowsConfiguration.enableAutomaticUpdates property must set to false in the scale set model definition. The enableAutomaticUpdates property enables in-VM patching where "Windows Update" applies operating system patches without replacing the OS disk. With automatic OS image upgrades enabled on your scale set, an extra patching process through Windows Update is not required.
+So its not 0 but 
+An upgrade works by replacing the OS disk of a VM with a new disk created using the latest image version. Any configured extensions and custom data scripts are run on the OS disk, while data disks are retained. To minimize the application downtime, upgrades take place in batches, with no more than 20% of the scale set upgrading at any time.
+
+Its 4x0,2 = 0,8 =&gt; 1 (minimum)</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="510967" id="comment-510967">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/hanyahmed/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				hanyahmed
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Tue 28 Dec 2021 10:51">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">it should be 4 and 1</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">3</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="503394" id="comment-503394">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/arkadius/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				arkadius
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Fri 17 Dec 2021 07:34">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">For scale sets using Windows virtual machines, starting with Compute API version 2019-03-01, the property virtualMachineProfile.osProfile.windowsConfiguration.enableAutomaticUpdates property must set to false in the scale set model definition. The enableAutomaticUpdates property enables in-VM patching where "Windows Update" applies operating system patches without replacing the OS disk. With automatic OS image upgrades enabled on your scale set, an extra patching process through Windows Update is not required.
+https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="501713" id="comment-501713">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="/user/Sara_Mo/">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				Sara_Mo
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Wed 15 Dec 2021 00:00">
+			1 year, 6 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">Option1: 4
+Option2: 1</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">2</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<!-- single_comment.html -->
+<div class="media comment-container" data-comment-id="459571" id="comment-459571">
+<a class="minimize-comment comment-toggle" href="#">
+<i class="fa fa-minus-square-o mr-2 mt-1"></i>
+</a>
+<a class="maximize-comment comment-toggle" href="#">
+<i class="fa fa-plus-square-o mr-2 mt-1"></i>
+</a>
+<div class="media-body">
+<div class="comment-head">
+<i class="fa fa-user mr-1 mt-1"></i>
+<a href="#">
+<h5 class="mt-0 mb-0 align-middle d-inline-block comment-username">
+				[Removed]
+			</h5>
+</a>
+<span class="comment-date align-middle" title="Sat 09 Oct 2021 11:23">
+			1 year, 8 months ago
+		</span>
+</div>
+<div class="comment-body comment-toggled">
+<div class="comment-content">0 and 4
+as nothing changes simultaneously</div>
+<div class="comment-control">
+<span class="comment-control-buttons d-print-none">
+<a class="comment-upvote requires-login" href="#" title="Upvote"><i class="fa fa-thumbs-up"></i></a>
+<a class="ml-2 comment-reply-to requires-login" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<a class="ml-2 comment-flag-report requires-login" href="#" title="Report"><i class="fa fa-flag"></i></a>
+</span>
+<span class="ml-2 upvote-text">
+				upvoted <span class="upvote-count">4</span> times
+			</span>
+<span class="comment-control-error ml-2"></span>
+</div>
+<div class="new-comment-box-container mt-2">
+</div>
+<div class="comment-replies">
+<!-- Nesting start -->
+<!-- Nesting end -->
+</div>
+</div>
+<div class="comment-ellipsis comment-toggled">
+		...
+	</div>
+</div>
+</div>
+<div class="load-more-section d-print-none mb-1" data-after-comment="459571" data-discussion-id="38272">
+<a class="load-full-discussion-button ml-3" href="javascript:void(0)">Load full discussion...</a>
+</div>
+</div>
+</div>
+</div>
+</div>
