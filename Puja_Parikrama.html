@@ -89,9 +89,18 @@
         }
 
         function openVideo(linkId, iframeId) {
-                // Open in app if available
+            if (isMobile()) {
+                // Attempt to open the app using the app-specific URL scheme
+                window.location.href = linkId;
+
+                // Attempt to close the window after a short delay
+                setTimeout(function() {
+                    // This may not work on all browsers due to security restrictions
+                    window.close();
+                }, 500);
+            } else {
                 window.open(linkId, '_system');
- 
+			}
         }
 
         function filterByLocation(location) {
