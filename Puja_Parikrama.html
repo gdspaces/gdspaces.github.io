@@ -12,25 +12,28 @@
             background-color: #f9f9f9;
         }
         .header {
-            background-image: url('https://www.issgovernance.com/file/2013/11/Website-Frontpage-Header-02.jpg'); /* Replace with your image URL */
+            background-image: url('https://www.issgovernance.com/file/2013/11/Website-Frontpage-Header-02.jpg');
             background-size: cover;
             color: white;
             text-align: center;
             padding: 40px 0;
-            font-size: 48px;
+            font-size: 2.5em;
             position: relative;
+            margin-bottom: 20px;
         }
         .tabs {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 20px;
-            flex-wrap: wrap;
         }
         .tab {
             padding: 10px 20px;
             background-color: #ddd;
             border-radius: 10px;
             cursor: pointer;
+            flex: 1 1 100px; /* Allow tabs to wrap and grow */
+            text-align: center;
         }
         .tab.active {
             background-color: #4285f4;
@@ -39,9 +42,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-        }
-        table, th, td {
-            border: 0px solid #2f2f2f;
+            margin-top: 10px;
         }
         th, td {
             padding: 8px;
@@ -51,22 +52,35 @@
             background-color: #f2f2f2;
         }
         img {
-            width: 16px;
-            height: 16px;
+            width: 24px; /* Adjusted for better visibility */
+            height: 24px; /* Adjusted for better visibility */
             cursor: pointer;
         }
         iframe {
-            display: none;
+            width: 100%;
+            height: auto;
             margin-top: 10px;
+            display: none;
         }
-        
         .name_tr {
             display: block;
             padding: 1rem;
             box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-            -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-            -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-            border-radius: 10px; 
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .header {
+                font-size: 2em; /* Decrease font size for smaller screens */
+            }
+            .tab {
+                flex: 1 1 100%; /* Stack tabs vertically */
+            }
+            img {
+                width: 20px; /* Smaller icons for mobile */
+                height: 20px;
+            }
         }
     </style>
     <script>
@@ -106,7 +120,6 @@
 <div class="header">
     পুজো পরিক্রমা ২০২৪
 </div>
-<p></p>
 
 <!-- Location Filter Tabs -->
 <div class="tabs">
@@ -124,18 +137,18 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Ahiritola Jubak Brinda (Theme: আকারের মহাযাত্রা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/DV2w_AkmquE', 'video_Ahiritola Jubak Brinda_18')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/ZO-lApfh5iI', 'video_Ahiritola Jubak Brinda_19')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Ahiritola Jubak Brinda_18" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ahiritola Jubak Brinda_18" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Ahiritola Jubak Brinda_19" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ahiritola Jubak Brinda_19" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -148,7 +161,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Ak Association  Saltlake Durgotsav_50" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ak Association  Saltlake Durgotsav_50" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -159,15 +172,15 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/FKXI62xFl4Q', 'video_Ahiritola Sarbojonin Durgotsav_17')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Ahiritola Sarbojonin Durgotsav_16" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ahiritola Sarbojonin Durgotsav_16" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Ahiritola Sarbojonin Durgotsav_17" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ahiritola Sarbojonin Durgotsav_17" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -175,18 +188,18 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Beliaghata 33no  Palli  (Theme: কোহি-নূর) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/yFGVZFMiTOM', 'video_Beliaghata 33no  Palli _47')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/QpIZRr7Il8g', 'video_Beliaghata 33no  Palli _48')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Beliaghata 33no  Palli _47" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Beliaghata 33no  Palli _47" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Beliaghata 33no  Palli _48" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Beliaghata 33no  Palli _48" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -194,12 +207,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Chaltabagan Sarbojanin Durgapuja Committee (Theme: অন্তরলোক ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/Z-Dct1AdnG8', 'video_Chaltabagan Sarbojanin Durgapuja Committee_42')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Chaltabagan Sarbojanin Durgapuja Committee_42" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Chaltabagan Sarbojanin Durgapuja Committee_42" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -207,12 +220,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Chorebagan Sarbojanin Durgotsab (Theme: দুগ্গা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/QFUz5x37u5s', 'video_Chorebagan Sarbojanin Durgotsab_49')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Chorebagan Sarbojanin Durgotsab_49" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Chorebagan Sarbojanin Durgotsab_49" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -220,12 +233,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Dumdum Park Sarbojanin Durga  (Theme: মানব জামিন) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/S7McHRvlIYk', 'video_Dumdum Park Sarbojanin Durga _34')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Dumdum Park Sarbojanin Durga _34" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dumdum Park Sarbojanin Durga _34" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -238,7 +251,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Dakshindari Youth_43" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dakshindari Youth_43" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -249,15 +262,15 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/Vx3UkQxHZHE', 'video_Dakshinpara Durgotsab Committee_52')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Dakshinpara Durgotsab Committee_51" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dakshinpara Durgotsab Committee_51" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Dakshinpara Durgotsab Committee_52" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dakshinpara Durgotsab Committee_52" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -270,7 +283,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Dum Dum Park Bharat Chakra Club_38" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dum Dum Park Bharat Chakra Club_38" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -278,12 +291,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Dum Dum Park Tarun Sangha (Theme: মুক্তধারা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/94g4ncrtc8w', 'video_Dum Dum Park Tarun Sangha_33')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Dum Dum Park Tarun Sangha_33" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dum Dum Park Tarun Sangha_33" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -291,18 +304,18 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Dum Dum Tarun Dal  (Theme: নীল সাদা  ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/rfdCin18XwM', 'video_Dum Dum Tarun Dal _36')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/hC7Pv0za6hE', 'video_Dum Dum Tarun Dal _37')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Dum Dum Tarun Dal _36" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dum Dum Tarun Dal _36" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Dum Dum Tarun Dal _37" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dum Dum Tarun Dal _37" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -315,7 +328,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Goabagan Sarodatsav Sammilani _54" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Goabagan Sarodatsav Sammilani _54" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -323,12 +336,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Hatibagan Sarbojanin Durgotsav (Theme: প্রকরণ - PROCESS ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/i_oOJAgehZw', 'video_Hatibagan Sarbojanin Durgotsav_23')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Hatibagan Sarbojanin Durgotsav_23" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Hatibagan Sarbojanin Durgotsav_23" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -336,12 +349,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Hatibagan Nabinpally  (Theme: থিয়েটার পাড়া) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/p8Xv4cUoR6s', 'video_Hatibagan Nabinpally _25')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Hatibagan Nabinpally _25" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Hatibagan Nabinpally _25" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -352,15 +365,15 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/8aJ0iAl_umQ', 'video_Jagat Mukherjee Park_21')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Jagat Mukherjee Park_20" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Jagat Mukherjee Park_20" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Jagat Mukherjee Park_21" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Jagat Mukherjee Park_21" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -373,7 +386,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Jorasanko Sadharan Durgotsav Samity_45" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Jorasanko Sadharan Durgotsav Samity_45" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -381,12 +394,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Kankurgachi Yubak Brinda (Theme: রূপকার ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/D1fjkBd6mYo', 'video_Kankurgachi Yubak Brinda_41')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Kankurgachi Yubak Brinda_41" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kankurgachi Yubak Brinda_41" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -394,12 +407,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Kashi Bose Lane Durga Puja Samity (Theme: রত্নগর্ভা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/YsDRMSir1UQ', 'video_Kashi Bose Lane Durga Puja Samity_22')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Kashi Bose Lane Durga Puja Samity_22" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kashi Bose Lane Durga Puja Samity_22" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -412,7 +425,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Kumartuli Park Sarbojanin_15" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kumartuli Park Sarbojanin_15" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -420,12 +433,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Kumartuli Sarbojanin Durgotsab (Theme: ক্ষুধা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/zHH-AOVIXTw', 'video_Kumartuli Sarbojanin Durgotsab_14')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Kumartuli Sarbojanin Durgotsab_14" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kumartuli Sarbojanin Durgotsab_14" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -433,12 +446,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Lalabagan Nabankur  (Theme: লালবাগানে নবাঙ্কুর ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/DRpJuUXMzp4', 'video_Lalabagan Nabankur _46')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Lalabagan Nabankur _46" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Lalabagan Nabankur _46" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -451,7 +464,7 @@
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Mitali Kankurgachi_44" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Mitali Kankurgachi_44" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -459,12 +472,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Nalin Sarkar Street (Theme: শহরনামা ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/X2iT_7fBOEk', 'video_Nalin Sarkar Street_26')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Nalin Sarkar Street_26" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Nalin Sarkar Street_26" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -472,12 +485,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>North Tridhara Sarbojanin (Theme: সলতে ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/-aa_LD78Nn0', 'video_North Tridhara Sarbojanin_53')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_North Tridhara Sarbojanin_53" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_North Tridhara Sarbojanin_53" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -485,12 +498,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Prafulla Kanan Balak Brinda East (Theme: পিত্রালয় ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/hb_TY8Llubo', 'video_Prafulla Kanan Balak Brinda East_31')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Prafulla Kanan Balak Brinda East_31" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Prafulla Kanan Balak Brinda East_31" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -498,12 +511,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Prafulla Kanan Paschim Adhibasi Brinda (Theme: ৫১ একান্ন ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/Q0knAlfC9cM', 'video_Prafulla Kanan Paschim Adhibasi Brinda_32')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Prafulla Kanan Paschim Adhibasi Brinda_32" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Prafulla Kanan Paschim Adhibasi Brinda_32" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -511,12 +524,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Sovabazar Burtolla Sarbojanin Durgotsav Samity (Theme: ধন-ধান্য) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/Q1P_TlyQL1w', 'video_Sovabazar Burtolla Sarbojanin Durgotsav Samity_35')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Sovabazar Burtolla Sarbojanin Durgotsav Samity_35" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Sovabazar Burtolla Sarbojanin Durgotsav Samity_35" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -524,12 +537,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Sikdar Bagan Sadharan Durgotsov (Theme: মানবতার উৎসব) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/UXMxCuEjfak', 'video_Sikdar Bagan Sadharan Durgotsov_24')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Sikdar Bagan Sadharan Durgotsov_24" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Sikdar Bagan Sadharan Durgotsov_24" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -537,12 +550,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Tala Barowar (Theme: হীরা-মানিক জ্বলে/হীরক রাজার দেশে/ Satyajit Ray) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/N4D35SqEWjo', 'video_Tala Barowar_39')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Tala Barowar_39" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Tala Barowar_39" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -550,12 +563,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Tala Prattoy  (Theme: বিহীন .. the void) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/VkNBPmgUCxc', 'video_Tala Prattoy _40')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Tala Prattoy _40" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Tala Prattoy _40" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -563,12 +576,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Ultadanga Bidhan Sangha (Theme: বাণিজ্যে বসতে লক্ষী ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/R47YwZXpL5M', 'video_Ultadanga Bidhan Sangha_29')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Ultadanga Bidhan Sangha_29" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ultadanga Bidhan Sangha_29" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -576,12 +589,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Ultadanga Karbagan Sarbajanin Durgotsab  (Theme: ভবপ্রীতা ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/AGcBhao2D14', 'video_Ultadanga Karbagan Sarbajanin Durgotsab _28')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Ultadanga Karbagan Sarbajanin Durgotsab _28" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ultadanga Karbagan Sarbajanin Durgotsab _28" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -589,12 +602,12 @@
     <tr class="name_tr video_row" data-location="North">
         <td>Telengabagan  (Theme: পৃথিবী গদ্যময় ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/plC6ubN4FN0', 'video_Telengabagan _30')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="North">
     <td>
-            <iframe id="video_Telengabagan _30" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Telengabagan _30" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -602,18 +615,18 @@
     <tr class="name_tr video_row" data-location="South">
         <td>95 Pally Jodhpur Park (Theme: ভবতারিণী ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/RjAs04tgkKQ', 'video_95 Pally Jodhpur Park_64')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/5yBaku4PSpE', 'video_95 Pally Jodhpur Park_65')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_95 Pally Jodhpur Park_64" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_95 Pally Jodhpur Park_64" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_95 Pally Jodhpur Park_65" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_95 Pally Jodhpur Park_65" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -621,12 +634,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Arjunpur Amra Sabai Club (Theme: অন্যদেশ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/nxeyxbPj7hg', 'video_Arjunpur Amra Sabai Club_91')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Arjunpur Amra Sabai Club_91" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Arjunpur Amra Sabai Club_91" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -639,7 +652,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Abasar Sarbojanin Durgotsab Samity_86" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Abasar Sarbojanin Durgotsab Samity_86" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -647,12 +660,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Ajeya Sanghati  (Theme: ঈক্ষণ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/1W1vIBnVzcA', 'video_Ajeya Sanghati _94')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Ajeya Sanghati _94" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ajeya Sanghati _94" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -660,12 +673,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Babubagan Sarbojonin (Theme: কবিতীর্থ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/2P88Y6bKxwg', 'video_Babubagan Sarbojonin_62')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> others
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> others
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Babubagan Sarbojonin_62" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Babubagan Sarbojonin_62" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -673,12 +686,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Badamtala Ashar Sangha (Theme: উৎসবের চালচিত্রে) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/-Wxi7dD90PA', 'video_Badamtala Ashar Sangha_75')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Badamtala Ashar Sangha_75" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Badamtala Ashar Sangha_75" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -691,7 +704,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Baghajatin Bc Block_84" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Baghajatin Bc Block_84" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -704,7 +717,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Baghajatin E Block Sarbojonin_87" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Baghajatin E Block Sarbojonin_87" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -717,7 +730,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Bosepukur Shitala Mandir_56" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Bosepukur Shitala Mandir_56" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -730,7 +743,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Bosepukur Talbagan _55" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Bosepukur Talbagan _55" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -738,12 +751,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Chakraberia Sarbojanin Durgotsab (Theme: নির্বাক) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/UlQyNG2jeYw', 'video_Chakraberia Sarbojanin Durgotsab_81')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Chakraberia Sarbojanin Durgotsab_81" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Chakraberia Sarbojanin Durgotsab_81" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -751,12 +764,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Chetla Agrani Club (Theme: কাশী বারাণসী ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/xgM0d-oy1aA', 'video_Chetla Agrani Club_83')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Chetla Agrani Club_83" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Chetla Agrani Club_83" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -769,7 +782,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Deshapriya Park_68" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Deshapriya Park_68" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -777,12 +790,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Gariahat Hindustan Club (Theme: বন্ধনহীন গ্রন্থি) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/TrtZyYx3isw', 'video_Gariahat Hindustan Club_60')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Gariahat Hindustan Club_60" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Gariahat Hindustan Club_60" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -790,12 +803,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Haridevpur New Sporting Club (Theme: আদায় ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/mo0Bnp90xR4', 'video_Haridevpur New Sporting Club_89')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Haridevpur New Sporting Club_89" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Haridevpur New Sporting Club_89" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -808,7 +821,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Hazra Park_79" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Hazra Park_79" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -821,7 +834,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Hindusthan Park Sarbojanin Durgatsav_61" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Hindusthan Park Sarbojanin Durgatsav_61" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -829,12 +842,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Jadavpur Athletic Club Durga Puja (Theme: পুতুল গড়ার শহরে) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/6iwfVy9BsVc', 'video_Jadavpur Athletic Club Durga Puja_66')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Jadavpur Athletic Club Durga Puja_66" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Jadavpur Athletic Club Durga Puja_66" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -842,12 +855,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Jodhpur Park (Theme: নি:স্বর নিস্তারিনী) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/LA_hRbqf1Ko', 'video_Jodhpur Park_67')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Jodhpur Park_67" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Jodhpur Park_67" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -855,12 +868,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Khidderpore Jubak Sangha (Theme: অস্তিত্ব রক্ষা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/mV8ncF4uJ-k', 'video_Khidderpore Jubak Sangha_95')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Khidderpore Jubak Sangha_95" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Khidderpore Jubak Sangha_95" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -868,12 +881,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Kalighat Milan Sangha (Theme: মানতপুরী) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/1NXig1n7aj0', 'video_Kalighat Milan Sangha_69')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> others
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> others
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Kalighat Milan Sangha_69" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kalighat Milan Sangha_69" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -886,7 +899,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Kendua Shanti Sangha Sarbojanin Durgotsab_88" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kendua Shanti Sangha Sarbojanin Durgotsab_88" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -894,12 +907,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Kiddirpur 25 Pally Club (Theme: পরিচারণ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/zA3gWTTDUKg', 'video_Kiddirpur 25 Pally Club_71')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Kiddirpur 25 Pally Club_71" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Kiddirpur 25 Pally Club_71" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -912,7 +925,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Mudiali Club_77" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Mudiali Club_77" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -920,12 +933,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Naktala Udayan Sangha (Theme: একান্নবর্তী) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/-LwWjRCfi0A', 'video_Naktala Udayan Sangha_72')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Naktala Udayan Sangha_72" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Naktala Udayan Sangha_72" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -933,12 +946,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Pratapaditya Road Tricone Park (Theme: স্বপথ ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/e7jZaLjJOKk', 'video_Pratapaditya Road Tricone Park_73')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Pratapaditya Road Tricone Park_73" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Pratapaditya Road Tricone Park_73" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -946,12 +959,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Purbachal Shakti Sangha (Theme: কলকাতার মূর্তিকথা) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/BYRPHhSLhQ8', 'video_Purbachal Shakti Sangha_74')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Purbachal Shakti Sangha_74" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Purbachal Shakti Sangha_74" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -959,18 +972,18 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Rajdanga Naba Uday Sangha (Theme: ভারসাম্য ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/8d7oaoAED_I', 'video_Rajdanga Naba Uday Sangha_57')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;
             <a onclick="showVideo('https://www.youtube.com/embed/hy3735jI57o', 'video_Rajdanga Naba Uday Sangha_58')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Rajdanga Naba Uday Sangha_57" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Rajdanga Naba Uday Sangha_57" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             
-            <iframe id="video_Rajdanga Naba Uday Sangha_58" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Rajdanga Naba Uday Sangha_58" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -978,12 +991,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Shibmandir Sarbojanin Durgotsab Samiti (Theme: ব্রাত্য ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/cXapf40--V0', 'video_Shibmandir Sarbojanin Durgotsab Samiti_80')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Shibmandir Sarbojanin Durgotsab Samiti_80" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Shibmandir Sarbojanin Durgotsab Samiti_80" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -991,12 +1004,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Samaj Sebi Sangha Durgapuja (Theme: কর্ষণ ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/OegEkiaIbqw', 'video_Samaj Sebi Sangha Durgapuja_76')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Samaj Sebi Sangha Durgapuja_76" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Samaj Sebi Sangha Durgapuja_76" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1004,12 +1017,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Santoshpur Avenue South (Theme: আগমন গমন ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/90n69a_3BP4', 'video_Santoshpur Avenue South_70')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Santoshpur Avenue South_70" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Santoshpur Avenue South_70" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1022,7 +1035,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Santoshpur Lake Pally _96" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Santoshpur Lake Pally _96" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1035,7 +1048,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Santoshpur Trikonpark Sarbojanin Durgotsab_90" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Santoshpur Trikonpark Sarbojanin Durgotsab_90" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1048,7 +1061,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Selimpur Pally Sarbojanin_63" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Selimpur Pally Sarbojanin_63" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1061,7 +1074,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Singhi Park Sarbojanin_59" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Singhi Park Sarbojanin_59" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1069,12 +1082,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Suruchi Sangha (Theme: পুরানো সেই দিনের কথা ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/rSdckWhnIlY', 'video_Suruchi Sangha_82')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Suruchi Sangha_82" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Suruchi Sangha_82" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1082,12 +1095,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Thakurpukur State Bank Park Sarbojanin (Theme: আমাদের দুগ্গা মা ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/DvV3rlJnGGI', 'video_Thakurpukur State Bank Park Sarbojanin_93')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Thakurpukur State Bank Park Sarbojanin_93" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Thakurpukur State Bank Park Sarbojanin_93" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1095,12 +1108,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td>Vivekananda Park Athletic Club  (Theme: ব্যারিকেড) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/kr8u9m2BgNQ', 'video_Vivekananda Park Athletic Club _92')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Vivekananda Park Athletic Club _92" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Vivekananda Park Athletic Club _92" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1113,7 +1126,7 @@
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_Alipore Sarbojanin_85" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Alipore Sarbojanin_85" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1121,12 +1134,12 @@
     <tr class="name_tr video_row" data-location="South">
         <td> Bakul Bagan Sarbojanin Durgotsab (Theme: মাসান) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/ukYejJcigWo', 'video_ Bakul Bagan Sarbojanin Durgotsab_78')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="South">
     <td>
-            <iframe id="video_ Bakul Bagan Sarbojanin Durgotsab_78" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_ Bakul Bagan Sarbojanin Durgotsab_78" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1134,12 +1147,12 @@
     <tr class="name_tr video_row" data-location="Behala">
         <td>Barisha Club Durga (Theme: বসতি ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/WgtDmPmdFzA', 'video_Barisha Club Durga_100')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Behala">
     <td>
-            <iframe id="video_Barisha Club Durga_100" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Barisha Club Durga_100" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1152,7 +1165,7 @@
     </tr>
     <tr class="video_row" data-location="Behala">
     <td>
-            <iframe id="video_Barisha Sarbojanin_97" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Barisha Sarbojanin_97" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1160,12 +1173,12 @@
     <tr class="name_tr video_row" data-location="Behala">
         <td>Behala Club Durga Puja (Theme: আরণ‍্যক ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/lGm_7UcKX6E', 'video_Behala Club Durga Puja_99')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Theme Video
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Theme Video
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Behala">
     <td>
-            <iframe id="video_Behala Club Durga Puja_99" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Behala Club Durga Puja_99" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1173,12 +1186,12 @@
     <tr class="name_tr video_row" data-location="Behala">
         <td>Behala Devdaru Photok (Theme: হৃদয় চিরলে দূর্গা পাবে ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/4oAOODTiwdM', 'video_Behala Devdaru Photok_98')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Sangbad Pratidin
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Sangbad Pratidin
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Behala">
     <td>
-            <iframe id="video_Behala Devdaru Photok_98" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Behala Devdaru Photok_98" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1191,7 +1204,7 @@
     </tr>
     <tr class="video_row" data-location="Howrah">
     <td>
-            <iframe id="video_Madhusudan Das Lane And Bye Lane Sarbojaneen Durgotsab_101" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Madhusudan Das Lane And Bye Lane Sarbojaneen Durgotsab_101" frameborder="0" allowfullscreen></iframe>
            &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1199,12 +1212,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Shasthi   Bodhan   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/xaN_ei11vkI', 'video_Shasthi   Bodhan _0')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Shasthi   Bodhan _0" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Shasthi   Bodhan _0" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1212,12 +1225,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Shasthi   Kalparambha  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/U9JC9BzbmrE', 'video_Shasthi   Kalparambha_1')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Shasthi   Kalparambha_1" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Shasthi   Kalparambha_1" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1225,12 +1238,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Shasthi  Amantran   Adhivas  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/VYqooKInj44', 'video_Shasthi  Amantran   Adhivas_2')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Shasthi  Amantran   Adhivas_2" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Shasthi  Amantran   Adhivas_2" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1238,12 +1251,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Saptami Puja  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/DkPmO5vvUZg', 'video_Saptami Puja_3')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Saptami Puja_3" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Saptami Puja_3" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1251,12 +1264,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Saptami   Arati  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/81E-JzSR-CE', 'video_Saptami   Arati_4')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Saptami   Arati_4" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Saptami   Arati_4" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1264,12 +1277,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Mahashtami Puja  Kumari Puja  Sandhi Puja  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/rF0DMTRFdG8', 'video_Mahashtami Puja  Kumari Puja  Sandhi Puja_5')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Mahashtami Puja  Kumari Puja  Sandhi Puja_5" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Mahashtami Puja  Kumari Puja  Sandhi Puja_5" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1277,12 +1290,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Ashtami   Arati  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/jxwi8QFOXVA', 'video_Ashtami   Arati_6')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Ashtami   Arati_6" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Ashtami   Arati_6" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1290,12 +1303,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Mahanavami Puja  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/43EE9AZRu0Q', 'video_Mahanavami Puja_7')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Mahanavami Puja_7" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Mahanavami Puja_7" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1303,12 +1316,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Navami   Arati  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/l2ecrLhVDV4', 'video_Navami   Arati_8')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Navami   Arati_8" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Navami   Arati_8" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1316,12 +1329,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Dashami Puja  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/Hruq7OTL2gE', 'video_Dashami Puja_9')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Dashami Puja_9" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Dashami Puja_9" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
@@ -1329,12 +1342,12 @@
     <tr class="name_tr video_row" data-location="Belur Math">
         <td>Visarjan  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <a onclick="showVideo('https://www.youtube.com/embed/awyw2TEzFMc', 'video_Visarjan_10')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 24px !important;"> Live stream
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Live stream
             </a> &nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr class="video_row" data-location="Belur Math">
     <td>
-            <iframe id="video_Visarjan_10" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_Visarjan_10" frameborder="0" allowfullscreen></iframe>
             &nbsp;&nbsp;&nbsp;
             </td>
     </tr>
