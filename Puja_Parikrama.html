@@ -89,19 +89,9 @@
         }
 
         function openVideo(linkId, iframeId) {
-            if (isMobile()) {
                 // Open in app if available
                 window.open(linkId, '_system');
-            } else {
-                var iframe = document.getElementById(iframeId);
-                if (iframe.style.display === "none") {
-                    iframe.src = linkId;
-                    iframe.style.display = "block";
-                } else {
-                    iframe.style.display = "none";
-                    iframe.src = "";  // stop the video when hidden
-                }
-            }
+ 
         }
 
         function filterByLocation(location) {
